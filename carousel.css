@@ -1,0 +1,166 @@
+
+.carousel-container {
+  position: relative;
+  width: 30%;
+  height: 350px;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+input {
+  margin: 1em;
+  position: absolute;
+  display: none;
+}
+
+
+.oneLabel, .twoLabel, .threeLabel, .fourLabel, .fiveLabel {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  color: rgba(255, 255, 255, .65);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.back-arrow-one, .back-arrow-two, .back-arrow-three, .back-arrow-four {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  width: 50px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, .35);
+    background-image: url(arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+  cursor: pointer;
+}
+
+.img-carousel-one,
+.img-carousel-two,
+.img-carousel-three,
+.img-carousel-four,
+.img-carousel-five {
+  position: absolute;
+}
+
+.img-carousel-one {
+  opacity: 0;
+}
+
+.img-carousel-two {
+  opacity: 0;
+}
+
+.img-carousel-three {
+  opacity: 0;
+}
+
+.img-carousel-four {
+  opacity: 0;
+}
+
+.img-carousel-five {
+  opacity: 0;
+}
+
+
+#input-one-carousel:checked ~ .img-carousel-one,
+#input-two-carousel:checked ~ .img-carousel-two,
+#input-three-carousel:checked ~ .img-carousel-three,
+#input-four-carousel:checked ~ .img-carousel-four,
+#input-five-carousel:checked ~ .img-carousel-five {
+  opacity: 1;
+}
+
+#input-one-carousel:checked ~ .oneLabel,
+#input-one-carousel:checked ~ .threeLabel,
+#input-one-carousel:checked ~ .fourLabel,
+#input-one-carousel:checked ~ .fiveLabel {
+  visibility: hidden;
+}
+
+#input-two-carousel:checked ~ .twoLabel,
+#input-two-carousel:checked ~ .oneLabel,
+#input-two-carousel:checked ~ .fourLabel,
+#input-two-carousel:checked ~ .fiveLabel {
+  visibility: hidden;
+}
+
+#input-three-carousel:checked ~ .threeLabel,
+#input-three-carousel:checked ~ .twoLabel,
+#input-three-carousel:checked ~ .oneLabel,
+#input-three-carousel:checked ~ .fiveLabel {
+  visibility: hidden;
+}
+
+#input-four-carousel:checked ~ .fourLabel,
+#input-four-carousel:checked ~ .twoLabel,
+#input-four-carousel:checked ~ .threeLabel,
+#input-four-carousel:checked ~ .oneLabel {
+  visibility: hidden;
+}
+
+#input-five-carousel:checked ~ .fourLabel,
+#input-five-carousel:checked ~ .twoLabel,
+#input-five-carousel:checked ~ .threeLabel,
+#input-five-carousel:checked ~ .fiveLabel {
+  visibility: hidden;
+}
+
+#input-three-carousel:checked ~ .back-arrow-two,
+#input-three-carousel:checked ~ .back-arrow-one,
+#input-three-carousel:checked ~ .back-arrow-four {
+  visibility: hidden;
+}
+
+#input-four-carousel:checked ~ .back-arrow-two,
+#input-four-carousel:checked ~ .back-arrow-one,
+#input-four-carousel:checked ~ .back-arrow-three {
+  visibility: hidden;
+}
+
+#input-two-carousel:checked ~ .back-arrow-three,
+#input-two-carousel:checked ~ .back-arrow-one,
+#input-two-carousel:checked ~ .back-arrow-four {
+  visibility: hidden;
+}
+
+#input-one-carousel:checked ~ .back-arrow-two,
+#input-one-carousel:checked ~ .back-arrow-three,
+#input-one-carousel:checked ~ .back-arrow-four {
+  visibility: hidden;
+}
+
+#input-five-carousel:checked ~ .back-arrow-one,
+#input-five-carousel:checked ~ .back-arrow-two,
+#input-five-carousel:checked ~ .back-arrow-three,
+#input-five-carousel:checked ~ .back-arrow-four {
+  visibility: hidden;
+}
+
+
+.gradient-background {
+    background-color: rgba(255, 255, 255, .35); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, transparent, rgba(255, 255, 255, .35)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, transparent, rgba(255, 255, 255, .35)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, transparent, rgba(255, 255, 255, .35)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, transparent, rgba(255, 255, 255, .35)); /* Standard syntax */
+}
+
