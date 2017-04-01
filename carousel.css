@@ -1,8 +1,8 @@
 
 .carousel-container {
   position: relative;
-  width: 30%;
-  height: 350px;
+  width: 50%;
+  height: 500px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -34,13 +34,19 @@ input {
   color: rgba(255, 255, 255, .65);
   font-size: 2em;
   cursor: pointer;
+  /** box-shadow: -7px 6px 0px -3px rgba(255,255,255,.35), -12px 10px 0px -3px rgba(255,255,255,.25); **/
 }
+
+.fiveLabel {
+  cursor: disabled;
+}
+
 
 .back-arrow-one, .back-arrow-two, .back-arrow-three, .back-arrow-four {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 45px;
+  top: 50px;
   width: 50px;
   height: 25px;
   background-color: rgba(255, 255, 255, .35);
@@ -50,6 +56,57 @@ input {
     filter: alpha(opacity=70);
     opacity: 0.7;
   cursor: pointer;
+}
+
+
+.back-arrow {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  padding-left: 12.5px;
+}
+
+
+.forward-arrow {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+    background-image: url(arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: alpha(opacity=35);
+    opacity: 0.35;    
+}
+
+.firstlines {
+  position: absolute;
+  right: 7px;
+  top: 6.5px;
+  width: 45px;
+  height: 40px;
+  border-left: 1px solid rgba(255, 255, 255, .25);
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+  z-index: 1;
+}
+
+.secondlines {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 45px;
+  height: 40px;
+  border-left: 1px solid rgba(255, 255, 255, .25);
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+
+
+.prevent-clicks {
+  pointer-events: none;
+  cursor: default;
 }
 
 .img-carousel-one,
@@ -162,5 +219,13 @@ input {
     background: -o-linear-gradient(right, transparent, rgba(255, 255, 255, .35)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, transparent, rgba(255, 255, 255, .35)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(right, transparent, rgba(255, 255, 255, .35)); /* Standard syntax */
+}
+
+.gradient-back-button {
+    background-color: rgba(255, 255, 255, .35); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, .35)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, transparent, rgba(255, 255, 255, .35)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, transparent, rgba(255, 255, 255, .35)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, transparent, rgba(255, 255, 255, .35)); /* Standard syntax */
 }
 
