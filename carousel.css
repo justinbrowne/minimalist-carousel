@@ -49,12 +49,6 @@ input {
   top: 50px;
   width: 50px;
   height: 25px;
-  background-color: rgba(255, 255, 255, .35);
-    background-image: url(arrow-left.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: alpha(opacity=70);
-    opacity: 0.7;
   cursor: pointer;
 }
 
@@ -64,6 +58,8 @@ input {
   width: 25px;
   height: 25px;
   padding-left: 12.5px;
+  filter: alpha(opacity=55);
+  opacity: 0.55;   
 }
 
 
@@ -74,9 +70,6 @@ input {
   width: 12px;
   height: 12px;
   background-color: transparent;
-    background-image: url(arrow-right.png);
-    background-repeat: no-repeat;
-    background-position: center;
     filter: alpha(opacity=35);
     opacity: 0.35;    
 }
