@@ -1,2 +1,2 @@
 # minimalist-carousel
-Minimalist Carousel for Evolution UI
+Minimalist Carousel(pure CSS) for Evolution UI
